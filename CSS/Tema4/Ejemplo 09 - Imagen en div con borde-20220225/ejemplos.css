@@ -1,0 +1,12 @@
+#padre{
+    text-align: center;
+}
+
+
+#hijo{
+    outline: black solid;
+    border: red solid;
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

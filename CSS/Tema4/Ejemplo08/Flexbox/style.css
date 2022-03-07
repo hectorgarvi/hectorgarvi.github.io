@@ -1,0 +1,47 @@
+div{
+
+}
+
+body {
+    background-color: #C0C0C0;
+}
+
+#wrapper{
+    display: flex;
+    background-color: white;
+    width: 90%;
+    height: 600px;
+    border: black solid 1px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+#banner{
+    display: flex;
+    background-color: #ff6600;
+    height: 180px;
+    width: 100%;
+    border-bottom: black solid 1px;
+    justify-content: end;
+}
+
+#signup{
+    width: 180px;
+    height: 30px;
+    background-color: #9966CC;
+    border: black solid 1px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+#main{
+    display: flex;
+    height: 300px;
+    background-color: #9966CC;
+    background-repeat: no-repeat;
+    background-image: url(./azul.jpg);
+    background-position: left bottom;
+    justify-content: flex-end;
+	align-items: center;
+}
+

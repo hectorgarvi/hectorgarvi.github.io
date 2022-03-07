@@ -1,0 +1,58 @@
+div {
+    
+    display: inline-block;
+}
+
+body {
+    background: #696969 url('imagenes/bg_page.png') repeat-y fixed center;
+    background-size: 75%;
+}
+
+img {
+    border: black solid 1px;
+    width: 100%;    
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-family: comic;
+    color: rgb(170, 3, 3);
+
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana;
+    font-size: 20px;
+    color: blue;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-image: url(./imagenes/icono.ico);
+
+}
+
+#cuerpo {
+    background-color: white;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contenido {
+    margin: 5%;
+    margin-top: 2%;
+}
+
+#banner {
+    color: white;
+    margin: 0 auto;
+}

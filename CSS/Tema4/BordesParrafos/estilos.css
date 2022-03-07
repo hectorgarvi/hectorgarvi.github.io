@@ -1,0 +1,73 @@
+
+	
+	h1 {	
+		font-family: Verdana; 
+		font-size: 24px;
+		color: red;
+		margin-left: 20px;		
+	}
+		
+	h2 {	
+		font-family: "Comic Sans MS"; 
+		font-size: 18px;
+		color: navy;
+		margin-left: 20px;		
+	}
+		
+	p { 
+		font-size: 14px; 
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: justify;
+	}
+
+	.uno { 
+		border: dotted darkviolet thick;
+		margin: 20px;
+	}	
+			
+	.dos { 
+		border-style: double;
+		border-color: black;
+		margin: 20px;
+	 }	
+
+
+	 .tres {
+		 border-color: white;
+		 border-radius: 20px;
+		 border-style: groove;
+		 border-color: red yellow green;
+		 margin: 20px;
+	 }
+
+	 .cuatro {
+		 border-radius: 20px;
+		 border-style: dashed;
+		 border-color: blueviolet blue black khaki;
+		 margin: 20px;
+	 }
+
+	 .titulo1 {
+		 border-style: solid;
+		 border-color: yellow;
+		 margin: 20px;
+	 }
+
+	 .titulo2 {
+		 border-style: ridge;
+		 border-color: gray;
+		 margin: 20px;
+	 }
+
+	 .titulo3 {
+		 border-style: inset;
+		 border-color: #808080;
+		 margin: 20px;
+	 }
+
+	 .titulo4 {
+		border-style: outset;
+		border-color: #808080;
+		margin: 20px;
+	 }

@@ -1,0 +1,35 @@
+
+	h1 {	font-family: Verdana; 
+		font-size: 24px;
+		color: red;
+		margin-left: 20px;		}
+		
+	h2 {	font-family: "Comic Sans MS"; 
+		font-size: 18px;
+		color: navy;
+		margin-left: 20px;		}
+		
+	p { 	font-family: Verdana; 
+		font-size: 16px; 
+		color: gray;
+		text-align: justify;
+		margin-left: 20px;
+		margin-right: 20px;}
+
+	.impar { 
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 10px;
+		color: yellow;
+	}	
+			
+	.par { 
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+		font-size: 9px;
+		color: rgb(0, 255, 94);
+	 }	
+
+	#ultimo {
+		font-family: Georgia, Times, 'Times New Roman', serif;
+		font-size: 14px;
+		color: rgb(255, 0, 128);
+	}	

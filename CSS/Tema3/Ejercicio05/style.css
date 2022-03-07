@@ -1,0 +1,47 @@
+/*Selector universal*/
+* {
+    color:gray;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/*Selector de etiqueta*/
+h2 {
+    color: blue;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+/*Selector de clase*/
+.Titulo {
+    color: rgb(197, 21, 168);
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+/*Selector de id*/
+#info {
+    color: green;
+    font-family: Georgia;
+    font-size: 15px;
+}
+
+/*Selector descendente*/
+footer em {
+    color:red;
+}
+
+/*Selector adyacente*/
+p + p {
+    color: rosybrown;
+    font-family: Tahoma;
+    font-size: 17px;
+
+}
+
+/*Selector de atributos*/
+h3[class="clase"] {
+    color: rgb(103, 247, 8);
+    font-size: 20px;
+}
+

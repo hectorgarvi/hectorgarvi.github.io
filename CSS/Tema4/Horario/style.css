@@ -1,0 +1,55 @@
+table{
+    background-image: url(http://www.ieslosmanantiales.es/images/LOGO_ORIGINAL.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 80px 10px;
+}
+
+
+.GBD{
+    background-color: violet;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.PLAR{
+    background-color: aquamarine;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.FOL{
+    background-color: yellow;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.ISO{
+    background-color: brown;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.LMSGI{
+    background-color: darkgoldenrod;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.FUH{
+    background-color: gray;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.RECREO{
+    background-color: lightcyan;
+    opacity: 0.5;
+    z-index: 2;
+}
