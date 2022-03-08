@@ -1,0 +1,46 @@
+p{
+    color: #505050;
+    font-family: 'Calibri';
+    font-size: 16px;
+    margin-left: 75px;
+    text-align: justify;
+}
+
+h1,h2,h3{
+    color: #BD8100;
+    font-family: 'Baskerville';
+    border-top: 2px solid #86A100;
+    padding-left: 75px;
+}
+
+.note{
+    color: #333;
+    border: #DB8110 dashed 2px;
+    background-color: #fbf8a9;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 20px;
+}
+
+.note strong {
+    color: #FC6512;
+}
+
+body{
+    background-color: #FDF8AB;
+    background-image: url(./imagenes/fondo.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 760px;
+}
+
+#banner{
+    width: 760px;
+    height: 200px;
+    margin-top: 15px;
+}
