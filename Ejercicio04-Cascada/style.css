@@ -1,0 +1,40 @@
+#main{
+    float: left;
+    width: 580px;
+}
+
+#sidebar{
+    padding: 15px;
+    background-color: #E9F5FE;
+    margin-left: 600px;
+}
+
+body{
+    color: #B1967C;
+    font-family: 'Palatino Linotype', 'Baskerville';
+    padding-top: 100px;
+    width: 800px;
+    margin: 0 auto;
+    background-image: url(./images/bg_body.png);
+    background-repeat: repeat-x;
+    background-color: #CDE6FF;
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'Arial Black';
+}
+
+h2{
+    font-size: 2.2em;
+    color: #AFC3D6;
+    margin-bottom: 5px;
+}
+
+#main h2{
+    color: #E8A064;
+    border-bottom: 2px white solid;
+    background-image: url(./images/bullet_flower.png);
+    background-repeat: no-repeat;
+    padding: 0 0 10px 80px;
+}
