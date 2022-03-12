@@ -120,7 +120,7 @@ html {
   .nav {
     position: fixed;
     top: 0;
-    left: -210px;
+    left: -300px;
     width: 300px;
     height: 100vh;
     margin: 0;
@@ -128,6 +128,7 @@ html {
     background-color: #444;
     transition: left 500ms ease; /* Este es el tiempo de transición que tiene el fondo de la navbar */
     z-index: 0;
+    overflow: auto;
   }
 
   .nav ul {
