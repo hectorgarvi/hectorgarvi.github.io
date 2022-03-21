@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1Post</title>
+</head>
+<body>
+    
+    <h1>Rellena tu CV</h1>
+    <form action="./php/insertar_cv.php" method="post"></form>
+    
+    <div>
+        <label>Nombre</label><br>
+        <input name="nombre" type="text" value="" size="15" maxlength="30"><br>
+    </div>
+
+    <div>
+        <label>Apellidos</label><br>
+        <input name="apellidos" type="text" value="" size="25" maxlength="80"><br>
+    </div>
+
+    <div>
+        <label>Contrase&ntilde;a</label><br>
+        <input name="contraseña" type="password" value="" size="15" maxlength="10"><br>
+    </div>
+
+    <div>
+        <label>DNI</label><br>
+        <input name="dni" type="text" value="" size="8" maxlength="8"><br><br>
+    </div>
+    
+    <div>
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" name="sexo" value="Hombre" checked>Hombre<br>
+        <input type="radio" name="sexo" value="Mujer">Mujer<br><br>
+    </div>
+
+    <div>
+        <label>Incluir mi foto</label>
+        <input name="direc_adjunto" type="text" value="" size="10" readonly="readonly">
+        <input name="adjunto" type="file" value=""><br><br>
+    </div>
+        
+    <div>
+        <input name="suscr_boletin" type="checkbox" value="">Suscribirme al bolet&iacute;n de novedades<br><br>
+    </div>
+
+    <div>
+        <label for=""></label>
+        <input type="submit" name="enviar" value="Guardar">
+        <input type="reset" name="cancelar" value="Rechazar">
+    </div>
+   
+
+</body>
+</html>

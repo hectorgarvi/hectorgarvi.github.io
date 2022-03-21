@@ -1,0 +1,25 @@
+div{
+    margin: 5%;
+}
+
+body{
+    background-color: bisque;
+    color: blueviolet;
+}
+
+input:hover{
+    background-color: rgb(217, 119, 237);
+}
+
+input:focus{
+    background-color: beige;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: rgb(13, 147, 209);
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: grab;
+}
