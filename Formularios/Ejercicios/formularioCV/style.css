@@ -1,0 +1,11 @@
+div{
+    margin: 1%;
+}
+
+input:hover{
+    background-color: rgb(217, 119, 237);
+}
+
+input:focus{
+    background-color: beige;
+}
