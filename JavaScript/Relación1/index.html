@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="script.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id="titulo"><h1>Pr&aacute;ctica 1<h1></div>
+    
+
+    <form name="f1"><h2>1. Sumar 3 n&uacute;meros</h2>
+        <p>Introduce un numero en cada hueco para hallar la suma de los 3:</p><br>
+        Número 1: <input type="number" name="n1" placeholder="0"><br><br>
+        Número 2: <input type="number" name="n2" placeholder="0"><br><br>
+        Número 3: <input type="number" name="n3" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Calcular Suma" onclick="
+
+        suma = parseInt(f1.n1.value) + parseInt(f1.n2.value) + parseInt(f1.n3.value);
+        alert('La suma es..: ' + suma);">
+
+    </form>
+
+
+    <form name="f2"><h2>2. Media de 5 n&uacute;meros</h2>
+        <p>Introduce un numero en cada hueco para hallar la media de los 5:</p><br>
+        Número 1: <input type="number" name="n1" placeholder="0"><br><br>
+        Número 2: <input type="number" name="n2" placeholder="0"><br><br>
+        Número 3: <input type="number" name="n3" placeholder="0"><br><br>
+        Número 4: <input type="number" name="n4" placeholder="0"><br><br>
+        Número 5: <input type="number" name="n5" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Calcular Media" onclick="
+
+        media = ((parseFloat(f2.n1.value) + parseFloat(f2.n2.value) + parseFloat(f2.n3.value) + parseFloat(f2.n4.value) + parseFloat(f2.n5.value)) / 5);
+        alert('La media es..: ' + media);">
+
+    </form>
+
+
+    <form name="f3"><h2>3. Cuadrado de un n&uacute;mero</h2>
+        <p>Introduce a continuaci&oacute;n un n&uacute;mero para elevarlo al cuadrado:</p>
+        <input type="number" name="n1" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Calcular Cuadrado" onclick="
+
+        cuadrado = parseInt(f3.n1.value) * parseInt(f3.n1.value);
+        alert('El cuadrado del número es..: ' + cuadrado);">
+
+    </form>
+
+
+    <form name="f4"><h2>4. Suma, resta, producto y resto de 2 n&uacute;meros</h2>
+        <p>Introduce a continuaci&oacute;n dos n&uacute;meros para calcular la suma, la resta, el producto y el resto:</p><br>
+        Número 1: <input type="number" name="n1" placeholder="0"><br><br>
+        Número 2: <input type="number" name="n2" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Calcular" onclick="
+
+        suma = parseInt(f4.n1.value) + parseInt(f4.n2.value);
+        resta = parseInt(f4.n1.value) - parseInt(f4.n2.value);
+        producto = parseInt(f4.n1.value) * parseInt(f4.n2.value);
+        resto = parseInt(f4.n1.value) % parseInt(f4.n2.value);
+        document.write('La suma de los números es...: ' + suma);
+        document.write('<br> La resta de los números es..: ' + resta);
+        document.write('<br> El producto de los números es...: ' + ' ' + producto );
+        document.write('<br> El resto de los números es...: ' + resto);">
+
+    </form>
+
+
+    <form name="f5"><h2>5. Calcular sueldo del mes.</h2>
+        <p>Introduce las horas trabajadas al dia y el precio por hora a cobrar, as&iacute; como el % de IRPF a descontar para hallar el sueldo del mes.</p>
+        <p>El mes se tomar&aacute; como un mes de 30 d&iacute;as.</p> <br>
+        <input type="number" name="horas" placeholder="0"> Horas trabajadas al mes<br><br>
+        <input type="number" name="precio" placeholder="0"> Precio por hora<br><br>
+        <input type="number" name="irpf" placeholder="0"> Porcentaje de IRPF<br><br>
+        <input type="submit" class="submit" value="Calcular sueldo" onclick="
+
+        sueldomes = parseFloat(f5.horas.value) * parseFloat(f5.precio.value);
+        sueldototal = sueldomes - (sueldomes * (parseFloat(f5.irpf.value) / 100));
+
+        alert('El sueldo total del mes es..: ' + sueldototal);">
+
+    </form>
+
+
+    <form name="f6"><h2>6. Calcular el total de horas, minutos y segundos en segundos</h2>
+        <p>Introduce las horas, minutos y segundos para pasarlo a segundos</p><br>
+        <input type="number" name="horas" id="horas" placeholder="0"> Horas<br><br>
+        <input type="number" name="minutos" id="minutos" placeholder="0"> Minutos<br><br>
+        <input type="number" name="segundos" id="segundos" placeholder="0"> Segundos<br><br>
+        <input type="submit" class="submit" value="Calcular segundos totales" onclick="
+
+        // Para poner 0 como valor por defecto, introducimos el siguiente codigo:
+        document.getElementById('horas').defaultValue = '0';
+        document.getElementById('minutos').defaultValue = '0';
+        document.getElementById('segundos').defaultValue = '0';
+        // Asi tendremos como valor por defecto el 0 en los elementos del documento con id horas, minutos y segundos.
+
+        hs = parseInt(f6.horas.value) * 3600;
+        ms = parseInt(f6.minutos.value) * 60;
+        segtotales = hs + ms + parseInt(f6.segundos.value);
+
+        alert('Los segundos totales de los datos introducidos son..: ' + segtotales);">
+
+    </form>
+
+
+    <form name="f7"><h2>7. Calcular precio total de una compra</h2>
+        <p>Introduce a continuaci&oacute;n el precio unitario de un producto sin IVA, el número de unidades compradas y el descuento aplicado.</p><br>
+        <p>Precio unitario</p>
+            <input type="number" name="preciouni" placeholder="0"><br><br>
+        <p>N&uacute;mero de unidades compradas</p>
+            <input type="number" name="uds" placeholder="0"><br><br>
+        <p>Descuento aplicado (en %)</p>
+            <input type="number" name="descuento" placeholder="0" value="0"><br><br>
+        <p>IVA aplicado a la compra</p>
+            <input type="number" name="iva" placeholder="0" value="21"><br><br>
+        <input type="submit" class="submit" value="Calcular precio total" onclick="
+
+        preciouds = parseFloat(f7.preciouni.value) * parseFloat(f7.uds.value);
+        preciodescuento = preciouds - (preciouds * (parseFloat(f7.descuento.value) / 100));
+        preciotot = preciodescuento + (preciodescuento * (parseFloat(f7.iva.value) / 100));
+        alert('El precio total de los productos es..: ' + preciotot + ' €');">
+
+    </form>
+
+
+    <form name="f8"><h2>8. Calcular precio neto e IVA</h2> 
+        <p>Introduce el precio total de un producto para obtener el precio neto y el IVA.</p>
+        <p>Precio total del producto:
+            <input type="number" name="preciotot" placeholder="0"></p><br>
+        <input type="submit" class="submit" value="Calcular precio neto e IVA" onclick="
+
+        iva = (parseFloat(f8.preciotot.value) * (21 / 100));
+        precioneto = parseFloat(f8.preciotot.value) - (parseFloat(f8.preciotot.value) * (21 / 100));
+        // desc = parseFloat(f8.descuento.value)
+        /* ¿TENDRIAMOS QUE CALCULAR TAMBIEN EL DESCUENTO SI HUBIERA? SI ES ASI, ¿SE INTRODUCE DE TECLADO? */
+        alert('El precio neto del producto es: ' + precioneto + ' €' + ' y el IVA tiene un valor de ' + iva + ' €');">
+        
+    </form>
+
+
+    <form name="f9"><h2>9. Calcular potencia</h2>
+        <p>Introducir un n&uacute;mero y su exponente para calcular la potencia del mismo.</p>
+        <p>Introducir n&uacute;mero base:</p>
+            <input type="number" name="numero" placeholder="0"><br>
+        <p>Introducir exponente:</p>
+            <input type="number" name="exponente" placeholder="0"><br><br><br>
+        <input type="submit" class="submit" value="Calcular potencia" onclick="
+
+        let nume = parseFloat(f9.numero.value);
+        let exp = parseFloat(f9.exponente.value);
+        let potencia = 1;
+        for (let i = 0; i < exp; i++){
+            
+            potencia = potencia * nume;  
+        }
+        alert('La potencia de ' + nume + ' elevado a ' + exp + ' es: ' + potencia);">
+
+    </form>
+
+
+
+    <form name="f10"><h2>10. Calcular el sueldo mensual de un empleado </h2>
+        <p>A continuación, vamos a calcular el sueldo mensual de un empleado, siendo 160 el número de horas mensuales. El resto de horas, serán horas extras que se cobrarán según se indique en los cuadros de numbero.</p>
+        <p>Introduce el número de horas: </p>
+            <input type="number" name="nhoras" placeholder="0"><br><br>
+        <p>Introduce el precio por hora normal: </p>
+            <input type="number" name="precioHoraNormal" placeholder="0"><br><br>
+        <p>Introduce el precio por hora extra: </p>
+            <input type="number" name="precioHoraExtra" id="extras" placeholder="0"><br><br>
+        <p>Introduce el IRPF (%): </p>
+            <input type="number" name="IRPF"placeholder="0"><br><br><br>
+        
+
+        <input type="submit" class="submit" value="Calcular sueldo mensual" onclick="
+        /* Poner el valor de precioHoraExtra como 0 por defecto para no tener que introducirlo cuando no las haya */
+            document.getElementById('extras').defaultValue = '0';
+
+        /* ======================================================================================================== */ 
+            let horasExtras = 0;
+            horasMes = parseInt(f10.nhoras.value);
+            let IRPF = parseInt(f10.IRPF.value);
+            if (horasMes > 160){
+                horasExtras = horasMes - 160;
+                horasMes = 160;
+            }
+
+            precioExtras = horasExtras * parseFloat(f10.precioHoraExtra.value);
+            precioNormal = horasMes * parseFloat(f10.precioHoraNormal.value);
+
+            sueldo = precioExtras + precioNormal;
+            sueldoTot = sueldo - (sueldo * (IRPF / 100));
+
+            alert('El sueldo total del empleado es de ' + sueldoTot + ' €.');">
+
+
+    </form>
+
+
+    <form name="f11"><h2>11. Pasar de grados Fahrenheit a grados centígrados (ºC)</h2>
+        <p>Introduce la temperatura en grados Fahrenheit para devolverla en grados centígrados: </p>
+            <input type="number" name="f" placeholder="0"><br><br><br>
+        <input type="submit" class="submit" value="Calcular ºC" onclick=" 
+
+            faren = parseFloat(f11.f.value);
+            c = (faren - 32) * (5 / 9);
+
+            alert('Los grados Fahrenheit introducidos equivalen a ' + c.toFixed(3) + ' ºC');">
+
+    </form>
+
+
+    <form name="f12"><h2>12. Calcular la superficie de un triángulo a partir de la base y la altura</h2>
+        <p>Introduce la base del triángulo (en cms):</p>
+            <input type="number" name="base" placeholder="0"><br>
+        <p>Introduce la altura del triángulo (en cms):</p>
+            <input type="number" name="altura" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Calcular superficie" onclick="
+        
+        superficie = parseFloat(f12.base.value) * parseFloat(f12.altura.value) / 2;
+
+        alert('La superficie del triángulo es..: ' + superficie + ' cms');">
+
+    </form>
+
+
+    <form name="f13"><h2>13. Calcular la longitud y área de una circunferencia conociendo su radio</h2>
+        <p>Introduce el radio del círculo: </p>
+            <input type="number" name="radio" placeholder="0"><br><br><br>
+        <input type="submit" class="submit" value="Calcular longitud y área" onclick="
+        
+        rad = parseFloat(f13.radio.value)
+        lon = 2 * Math.PI * rad;
+        area = Math.PI * Math.pow(rad,2);
+
+        alert('La longitud de la circunferencia es ' + lon.toFixed(3) + ' cms ' + ' y su área es de ' + area.toFixed(3) + ' cms.');">
+        
+    </form>
+
+
+    <form name="f14"><h2>14. Determinar el numero de años, meses y días a partir de un número de días.</h2>
+        <p>Introduce número de días: </p>
+            <input type="number" name="dias" placeholder="0"></p><br>
+        <input type="submit" class="submit" value="Calcular años, meses y días" onclick="
+
+        let dias = parseInt(f14.dias.value);
+        anyos = parseInt(dias / 360);
+        meses = parseInt((dias % 360) / 30);
+        dias = parseInt((dias % 360) % 30);
+    
+        alert('Años: ' + anyos + ' meses: ' + meses + ' días: ' + dias);">
+
+
+    </form>
+
+
+    <form name="f15"><h2>15. Descomponer un numero</h2>
+        <p>Introduzca un n&uacute;mero de 4 cifras para descomponerlo en unidades, decenas, centenas y millares:</p>
+            <input type="number" name="numero" placeholder="0"></p><br>
+        <input type="submit" class="submit" value="Calcular precio neto e IVA" onclick="
+
+        let num = parseInt(f15.numero.value);
+        unidades = num % 10;
+        decenas = (num % 100 - unidades) / 10;
+        centenas = (num % 1000 - (unidades + (decenas * 10))) / 100;
+        millares = (num - (centenas * 100 + decenas * 10 + unidades)) / 1000;
+
+        alert('Millares: ' + millares + ' centenas: ' +centenas + ' decenas: ' + decenas + ' unidades: ' + unidades);">
+
+    </form>
+
+
+    <form name="f16"><h2>16. Calcular cuantos dias han pasado desde una fecha introducida por teclado.</h2>
+        <p>Introduce una fecha para obtener el total de días trascurridos: </p>
+            <input type="date" name="fechaIntro" placeholder="0"></p><br>
+        <input type="submit" class="submit" value="Calcular días" onclick="
+    
+    /*
+    ANOTACION: Este apartado está hecho para unos meses y años de 360 días al año y meses de 30 días.
+    Para hallar los días reales, tendríamos que introducir un if con la condición para hallar si un año es bisiesto o no. Si es false, el año tiene 365 días. Si es true, el año tiene 366 días
+    Además, también tendríamos que introducir que dependiendo el número del mes, tiene unos días u otros, por lo que para menor complicación, introduje los días haciendo media global.
+    */
+        /* Función para obtener la fecha introducida en la página */
+        let fecha1 = new Date(f16.fechaIntro.value)
+        /* Función para recoger la hora actual en una variable */
+        let fecha2 = new Date();
+        
+        /* Primero hallamos la cantidad de años que han pasado y lo multiplicamos por 360(media de días por año, igualando todos los meses a 30 días) */
+        let diasAnyo = (fecha2.getFullYear() - fecha1.getFullYear()) * 360;
+
+        /* Después, hallamos los meses de diferencia entre ambas fechas y multiplicamos por 30 (media de días por mes, igualando todos los meses a 30 días) */
+        let diasMeses = (fecha2.getMonth() - fecha1.getMonth()) * 30;
+
+        /* Ahora, restamos los días en sí en el que nos encontramos */
+        let diasDias = (fecha2.getDate() - fecha1.getDate());
+
+        /* Por último, sumamos todos los días obtenidos para hallar la cantidad de días totales de diferencia */
+        let diasTot = diasAnyo + diasMeses + diasDias;
+        
+
+        alert('Fecha: ' + diasTot);">
+
+
+    </form>
+
+</body>
+</html>

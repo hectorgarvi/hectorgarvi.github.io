@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de control</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="../../MisFunciones.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id="titulo"><h1>Pr&aacute;ctica 2<h1></div>
+
+        <form name="f1"><h2>1. Introducir un número y determinar si está entre 1 y 10.</h2>
+            <p>A continuación, introduce un número cualquiera para determinar si se encuentra entre el 1 y el 10: </p>
+            <input type="number" name="n" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Averiguar" onclick="
+
+        let num = parseInt(f1.n.value);
+
+        if (num < 11 && num > 0){
+            alert('El número ' + num + ' SI se encuentra entre el 1 y el 10.');
+
+        }else {
+            alert('El número ' + num + ' NO se encuentra entre el 1 y el 10.');
+        }
+        ;">
+
+        </form>
+
+        <form name="f2"><h2>2. Introducir 3 números y hallar el mayor.</h2>
+            <p>A continuación, introduce 3 números cualesquiera para determinar cual es el mayor: </p>
+        Numero 1: <input type="number" name="n1" placeholder="0"><br><br>
+        Numero 2: <input type="number" name="n2" placeholder="0"><br><br>
+        Numero 3: <input type="number" name="n3" placeholder="0"><br><br>
+
+        <input type="submit" class="submit" value="Averiguar" onclick="
+
+        var num1 = parseInt(f2.n1.value);
+        var num2 = parseInt(f2.n2.value);       
+        var num3 = parseInt(f2.n3.value);
+        
+        if (num1 > num2 && num1 > num3){
+            alert('El número ' + num1 + ' es el mayor de los tres.');
+        
+        }else if (num2 > num1 && num2 > num3){
+            alert('El número ' + num2 + ' es el mayor de los tres.');
+
+        }else{
+            alert('El número ' + num3 + ' es el mayor de los tres.');
+        }
+        ;">
+
+        </form>
+
+        <form name="f3"><h2>3. Introducir 3 números y ordenarlos de menor a mayor.</h2>
+                <p>A continuación, introduce 3 números cualesquiera para determinar el orden de menor a mayor: </p>
+            Numero 1: <input type="number" name="n1" placeholder="0"><br><br>
+            Numero 2: <input type="number" name="n2" placeholder="0"><br><br>
+            Numero 3: <input type="number" name="n3" placeholder="0"><br><br>
+    
+            <input type="submit" class="submit" value="Ordenar" onclick="
+    
+            var num1 = parseInt(f3.n1.value);
+            var num2 = parseInt(f3.n2.value);       
+            var num3 = parseInt(f3.n3.value);
+            
+            if (num1 > num2 && num1 > num3 && num3 > num2){
+                alert('El orden de menor a mayor es ' + num2 + ' , ' + num3 + ' , ' + num1 + '.');
+
+            }else if (num1 > num2 && num1 > num3 && num2 > num3){
+                alert('El orden de menor a mayor es ' + num3 + ' , ' + num2 + ' , ' + num1 + '.');
+
+            }else if (num2 > num1 && num2 > num3 && num1 > num3){
+                alert('El orden de menor a mayor es ' + num3 + ' , ' + num1 + ' , ' + num2 + '.');
+  
+            }else if (num2 > num1 && num2 > num3 && num3 > num1){
+                alert('El orden de menor a mayor es ' + num1 + ' , ' + num3 + ' , ' + num1 + '.');
+
+            }else if(num3 > num2 && num3 > num1 && num2 > num1){
+                alert('El orden de menor a mayor es ' + num1 + ' , ' + num2 + ' , ' + num3 + '.');
+
+            }else{
+                alert('El orden de menor a mayor es ' + num2 + ' , ' + num1 + ' , ' + num3 + '.');
+            }
+            
+            ;">
+    
+        </form>
+
+        <form name="f4"><h2>4. Introducir una nota para saber el resultado.</h2>
+            <p>A continuación, introduce una nota del 0 al 10 para saber el resultado correspondiente: </p>
+        <input type="number" name="nota" placeholder="0"><br><br>
+        <input type="submit" class="submit" value="Evaluar" onclick="
+        
+        let n = parseFloat(f4.nota.value);
+
+        switch(n){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                alert('Usted ha sacado un suspenso.');
+                break;
+
+            case 5:
+                alert('Usted ha sacado un suficiente.');
+                break;
+
+            case 6:
+                alert('Usted ha sacado un bien.');
+                break;
+
+            case 7:
+            case 8:
+                alert('Usted ha sacado un notable.');
+                break;
+
+            case 9:
+            case 10:
+                alert('Usted ha sacado un sobresaliente.');
+                break;
+        }
+
+        ;">
+
+        </form>
+
+        <form name="f5"><h2>5. Programa que imprima los números impares comprendidos entre 100 y 120.</h2>
+            <input type="submit" class="submit" value="Mostrar" onclick="
+                
+                for (let i = 101; i < 120; i = i + 2){
+                    document.write([i]);
+                    document.write('<br>');
+                    
+                }
+
+                ;">
+
+
+        </form>
+        
+        <form name="f6"><h2>6. Programa que muestre todos los múltiplos de 3 comprendidos entre 1 y 50</h2>
+            <input type="submit" class="submit" value="Mostrar" onclick="
+                
+                for (let i = 1; i < 50 / 3; i++){
+                    num = 3 * i;
+                    document.write([num]);
+                    document.write('<br>');
+                    
+                }
+
+                ;">
+
+        </form>
+        
+        <form name="f7"><h2>7. Lee todos los números hasta introducir el cero y súmalos.</h2>
+            <input type="submit" class="submit" value="Realizar suma" onclick="
+                
+                n = parseInt(prompt('Introduce número'));
+                let cuenta = n;
+
+                while(n != 0){
+                    n = parseInt(prompt('Introduce número'));
+                    cuenta += n;
+
+                }
+
+                alert(cuenta);
+                ;">
+
+
+        </form>
+        
+        <form name="f8"><h2>8. Imprime el cuadrado de todos los números comprendidos entre 1 y 10.</h2>
+            <input type="submit" class="submit" value="Realizar cuadrado" onclick="
+                
+                let cuadrado;
+                for (let i = 1; i < 11; ++i){
+                    cuadrado = i * i;
+                    document.write(cuadrado);
+                    document.write('<br>');
+                }
+
+
+                ;">
+
+
+        </form>
+        
+        <form name="f9"><h2>9. Escribe un número y una frase para devolver la frase el número de veces introducidas.</h2>
+            <input type="submit" class="submit" value="Escribir frase" onclick="
+                
+                numero = parseInt(prompt('Introduce número'));
+                frase = prompt('Introduce una frase');
+    
+                for (let i = 0; i < numero; ++i){
+                    document.write(frase);
+                    document.write('<br>');
+                }
+
+
+                ;">
+
+
+
+        </form>
+
+        <form name="f21"><h2>21. Determinar si un número introducido por teclado es primo.</h2>
+            <input type="number" name="numero" placeholder="0"><br><br>
+            <input type="button" class="submit" value="Hallar" onclick="
+            if(esPrimo(parseInt(numero.value))){
+                document.getElementById('r21').innerHTML = 'El numero ' + numero.value + ' es primo';
+            }else{
+                document.getElementById('r21').innerHTML = 'El numero ' + numero.value + ' no es primo';
+            }
+           ">
+
+            <p id="r21"></p>
+            
+
+
+        </form>
+
+</body>
+</html>

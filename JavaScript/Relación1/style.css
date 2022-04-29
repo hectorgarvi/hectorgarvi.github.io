@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(255, 238, 170);
+}
+
+form{
+    margin: 5%;
+    border: 5px gray solid;
+    padding: 2%;
+    background-color: rgb(184, 220, 251);
+}
+
+h2{
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+input:hover{
+    background-color: rgb(251, 234, 213);
+    
+}
+
+input.submit{
+    background-color: white;
+    border: solid 5px gray;
+    border-radius: 50px;
+    color: rgb(192, 55, 1);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+div#titulo{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: rgb(63, 2, 124);
+    box-shadow: 0 2px 5px black;
+    /* animation-name: example; */
+}
+
+/*
+marquee{
+    background-color: bisque;
+    color: rgb(1, 103, 114);
+    margin-bottom: -1%;
+    margin-top: 0%;
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 50px;
+}
+*/
+
+/* CODIGO PARA ASIGNARLE UNA ANIMACION DE CAMBIO DE COLOR (EN ESTE CASO) A LA FUENTE DE TITULO 
+#titulo{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {color:blueviolet;}
+    50%  {color:blue;}
+    100% {color:blueviolet;}
+  }
+
+div{
+    width: 50%;
+    
+}
+*/
